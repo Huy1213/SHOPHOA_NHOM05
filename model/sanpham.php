@@ -70,4 +70,16 @@
         $sanpham = $stmt->fetchAll();
         return $sanpham;
     }
+<<<<<<< HEAD
+=======
+    function getSPTheoMau($mamau)
+    {
+        $conn = ketnoi();
+        $stmt = $conn->prepare("SELECT * FROM sanpham WHERE MaMau = '$mamau'");
+        $stmt->execute();
+        $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $sanpham = $stmt->fetchAll();
+        return $sanpham;
+    }
+>>>>>>> master
 ?>

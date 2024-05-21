@@ -47,7 +47,11 @@
                     foreach ($kq as $sp) {
                         $maHinh = $sp['MaSP']; // Lấy mã hình từ sản phẩm
                         $hinhanh = get_HinhAnh($maHinh);
+<<<<<<< HEAD
                 ?>
+=======
+                    ?>
+>>>>>>> master
                         <div class="col-md-6 col-sm-6 col-lg-4 col-custom product-area">
                             <div class="product-item">
 
@@ -55,7 +59,11 @@
 
                                     <div class="product-image">
                                         <a class="d-block" href="index.php?page=chitietsanpham&id=<?php echo $sp['MaSP'] ?>">
+<<<<<<< HEAD
                                             <img src="view/assets/images/product/<?=$hinhanh[0]['TenHinh']?>" alt="" class="product-image-1 w-100">
+=======
+                                            <img src="view/assets/images/product/<?php echo $sp['HinhAnh'] ?>" alt="" class="product-image-1 w-100">
+>>>>>>> master
                                             <img src="view/assets/images/product/" alt="" class="product-image-2 position-absolute w-100">
                                         </a>
                                         <span class="onsale">
@@ -93,6 +101,7 @@
                                         <div class="price-box">
                                             <span class="regular-price ">
                                                 <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                                     <font style="vertical-align: inherit;"><?php echo $sp['DonGia'] ?></font>
                                                 </font>
                                             </span>
@@ -101,6 +110,17 @@
                                                         <font style="vertical-align: inherit;">$70,00</font>
                                                     </font>
                                                 </del></span>
+=======
+                                                    <font style="vertical-align: inherit;">
+                                                    <?php 
+                                                    $dongia = number_format($sp['DonGia'], 0, ',', '.') . ' VNĐ';
+                                                    echo  $dongia; 
+                                                    ?>
+                                                </font>
+                                                </font>
+                                            </span>
+                                            
+>>>>>>> master
                                         </div>
 
                                     </div>
@@ -112,8 +132,18 @@
                     }
                     $conn = null;
                 }
+<<<<<<< HEAD
 
                 ?>
+=======
+                else {
+                ?>
+                    <div class="" style="height: 200px;">
+                        <h2 class=" fw-bold text-center ">Không có sản phẩm trong giỏ hàng</h2>
+                    </div>
+                    
+                <?php } ?>
+>>>>>>> master
             </div>
             <!-- Shop Wrapper End -->
             <!-- Bottom Toolbar Start -->
@@ -178,6 +208,7 @@
                     </div>
                 </div>
                 <div class="widget_inner">
+<<<<<<< HEAD
                     <div class="widget-list widget-mb-1">
                         <h3 class="widget-title">
                             <font style="vertical-align: inherit;">
@@ -199,15 +230,23 @@
                         </form>
                         <!-- Widget Menu End -->
                     </div>
+=======
+                    
+>>>>>>> master
 
                     <div class="widget-list widget-mb-3">
                         <h3 class="widget-title">
                             <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                 <font style="vertical-align: inherit;">Thẻ</font>
+=======
+                                <font style="vertical-align: inherit;">Màu sắc</font>
+>>>>>>> master
                             </font>
                         </h3>
                         <div class="sidebar-body">
                             <ul class="tags">
+<<<<<<< HEAD
                                 <li><a href="#">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Hoa hồng</font>
@@ -243,6 +282,16 @@
                                             <font style="vertical-align: inherit;">Quà</font>
                                         </font>
                                     </a></li>
+=======
+                                <?php foreach($mausac as $mau) {?>
+                                    <li><a href="index.php?page=sanpham&mamau=<?php echo $mau['MaMau'] ?>">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"><?php echo $mau['TenMau'] ?></font>
+                                            </font>
+                                        </a>
+                                    </li>
+                                <?php } ?>
+>>>>>>> master
                             </ul>
                         </div>
                     </div>

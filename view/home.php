@@ -15,7 +15,11 @@
                     <!-- Intro Content Start -->
                     <div class="intro11-content text-left">
                         <h3 class="title-slider text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xu hướng hàng đầu</font></font></h3>
+<<<<<<< HEAD
                         <h2 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xu hướng hoa năm 2022</font></font></h2>
+=======
+                        <h2 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xu hướng hoa năm 2024</font></font></h2>
+>>>>>>> master
                         <p class="desc-content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lorem ipsum dolor sit amet, pri autem nemore bonorum te. </font><font style="vertical-align: inherit;">Autem fierent ullamcorper ius no, nec ea quodsi invenire.</font></font></p>
                         <a href="product-details.php" class="btn flosun-button secondary-btn theme-color  rounded-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mua ngay</font></font></a>
                     </div>
@@ -35,7 +39,11 @@
                     <!-- Intro Content Start -->
                     <div class="intro11-content text-left">
                         <h3 class="title-slider text-uppercase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xu hướng hàng đầu</font></font></h3>
+<<<<<<< HEAD
                         <h2 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xu hướng hoa năm 2022</font></font></h2>
+=======
+                        <h2 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xu hướng hoa năm 2024</font></font></h2>
+>>>>>>> master
                         <p class="desc-content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lorem ipsum dolor sit amet, pri autem nemore bonorum te. </font><font style="vertical-align: inherit;">Autem fierent ullamcorper ius no, nec ea quodsi invenire.</font></font></p>
                         <a href="product-details.php" class="btn flosun-button secondary-btn theme-color  rounded-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mua ngay</font></font></a>
                     </div>
@@ -128,9 +136,15 @@
                                 <!--Single Product Start-->                            
                                 <div class="single-product position-relative mb-30">
                                     <div class="product-image">
+<<<<<<< HEAD
                                         <a class="d-block" href="product-details.php?hoa=<?php echo $sp['Ma_Hoa']; ?>">
                                             <img src="view/assets/images/product/<?php echo $sp["Hinh_anh"] ?>" alt="" class="product-image-1 w-100">
                                             <img src="view/assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100">
+=======
+                                        <a class="d-block" href="product-details.php?hoa=<?php echo $sp['MaSP']; ?>">
+                                            <img src="view/assets/images/product/<?php echo $sp["HinhAnh"] ?>" alt="" class="product-image-1 w-100">
+                                            <img src="view/assets/images/product/<?php echo $sp["HinhAnh"] ?>" alt="" class="product-image-2 position-absolute w-100">
+>>>>>>> master
                                         </a>
                                         <span class="onsale"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Doanh thu!</font></font></span>
                                         <div class="add-action d-flex flex-column position-absolute">
@@ -147,7 +161,11 @@
                                     </div>
                                     <div class="product-content">
                                         <div class="product-title">
+<<<<<<< HEAD
                                             <h4 class="title-2"> <a href="product-details.php"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $sp["Ten_Hoa"] ?></font></font></a></h4>
+=======
+                                            <h4 class="title-2"> <a href="product-details.php"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $sp["TenSP"] ?></font></font></a></h4>
+>>>>>>> master
                                         </div>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
@@ -157,7 +175,11 @@
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="price-box">
+<<<<<<< HEAD
                                             <span class="regular-price "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $sp["Don_Gia"] ?></font></font></span>
+=======
+                                            <span class="regular-price "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $sp["DonGia"] ?></font></font></span>
+>>>>>>> master
                                             <span class="old-price"><del><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$100</font></font></del></span>
                                         </div>
                                         <a href="cart.php" class="btn product-cart"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm vào giỏ hàng</font></font></a>

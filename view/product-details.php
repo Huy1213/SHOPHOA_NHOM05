@@ -1,9 +1,18 @@
 <?php 
+<<<<<<< HEAD
     $maHinh = $sanpham[0]['MaSP']; // Lấy mã hình từ sản phẩm
     $hinhanh = get_HinhAnh($maHinh);
 
     $DSHA = get_AllHinhAnh($maHinh);
     
+=======
+    $masp = $sanpham[0]['MaSP']; 
+    
+    // Lấy mã hình từ sản phẩm
+    $hinhanh = get_HinhAnh($masp);
+
+    $DSHA = get_AllHinhAnh($masp);
+>>>>>>> master
 ?>
 
 <div class="breadcrumbs-area position-relative">
@@ -35,7 +44,11 @@
 </div>
 <div class="single-product-main-area">
     <div class="container container-default custom-area">
+<<<<<<< HEAD
         <form action="index.php?page=addcart" method="post">
+=======
+        <form id="cart-form" action="index.php?page=addcart" method="post">
+>>>>>>> master
             <div class="row">
                 <div class="col-lg-5 offset-lg-0 col-md-8 offset-md-2 col-custom">
                     <div class="product-details-img">
@@ -43,7 +56,11 @@
                             <div class="swiper-wrapper" id="swiper-wrapper-10e5ca85ba4a0a182" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                 <div class="swiper-slide swiper-slide-active" role="group" aria-label="1/6" style="width: 470px; margin-right: 10px;">
                                     <a class="w-100" href="view/assets/images/product/large-size/1.jpg">
+<<<<<<< HEAD
                                         <img class="w-100" src="view/assets/images/product/large-size/<?php echo $hinhanh[0]['TenHinh']?>" alt="Sản phẩm">
+=======
+                                        <img class="w-100" src="view/assets/images/product/large-size/<?php echo $sanpham[0]['HinhAnh']?>" alt="Sản phẩm">
+>>>>>>> master
                                     </a>
                                 </div>
                             </div>
@@ -65,6 +82,7 @@
                         <div class="price-box mb-2">
                             <span class="regular-price">
                                 <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                     <font style="vertical-align: inherit;"><?=$sanpham[0]['DonGia']  ?></font>
                                 </font>
                             </span>
@@ -73,6 +91,15 @@
                                         <font style="vertical-align: inherit;">$90,00</font>
                                     </font>
                                 </del></span>
+=======
+                                    <font style="vertical-align: inherit;">
+                                    <?php
+                                         $formattedValue = number_format($sanpham[0]['DonGia'], 0, ',', '.') . ' VNĐ';
+                                         echo $formattedValue;
+                                    ?></font>
+                                </font>
+                            </span>   
+>>>>>>> master
                         </div>
                         <div class="product-rating mb-3">
                             <i class="fa fa-star"></i>
@@ -84,7 +111,18 @@
                         <div class="sku mb-3">
                             <span>
                                 <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                     <font style="vertical-align: inherit;">Mã hàng: 12345</font>
+=======
+                                    <font style="vertical-align: inherit;">Tình trạng: <span class="text-danger ">
+                                        <?php 
+                                            if( $sanpham[0]['SoLuong'] <=0)
+                                                echo 'Hết hàng';
+                                            else
+                                                echo 'Còn hàng';
+                                        ?></span>
+                                      </font>
+>>>>>>> master
                                 </font>
                             </span>
                         </div>
@@ -96,7 +134,11 @@
                         <div class="quantity-with_btn mb-5">                      
                                 <div class="quantity">
                                     <div class="cart-plus-minus">
+<<<<<<< HEAD
                                         <input name="soluong" class="cart-plus-minus-box" value="0" type="text">
+=======
+                                        <input name="soluong" id="soluong" class="cart-plus-minus-box" value="1" type="text" min="1">
+>>>>>>> master
                                         <div class="dec qtybutton">
                                             <font style="vertical-align: inherit;">
                                                 <font style="vertical-align: inherit;">-</font>
@@ -110,6 +152,7 @@
                                         
                                         <div class="dec qtybutton"><i class="fa fa-minus"></i></div>
                                         <div class="inc qtybutton"><i class="fa fa-plus"></i></div>
+<<<<<<< HEAD
                                     </div>
                                 </div>
                                 <div class="add-to_cart">
@@ -118,6 +161,18 @@
                                     <input type="hidden" value="<?=$sanpham[0]['TenSP']  ?>" name="tensp">
                                     <input type="hidden" value="<?php echo $hinhanh[0]['TenHinh']?>" name="img">
                                     <input type="hidden" value="<?=$sanpham[0]['DonGia']  ?>" name="gia">
+=======
+                                    </div>            
+                                </div> 
+                                                          
+                                <div class="add-to_cart">
+                                    <input class="btn product-cart button-icon flosun-button dark-btn" name="addtocart" type="submit" value="Thêm vào giỏ hàng" <?php if($sanpham[0]['SoLuong']<=0) echo 'disabled'  ?>>                             
+                                    <input type="hidden" value="<?=$sanpham[0]['MaSP']  ?>" name="id">
+                                    <input type="hidden" value="<?=$sanpham[0]['TenSP']  ?>" name="tensp">
+                                    <input type="hidden" value="<?=$sanpham[0]['HinhAnh']  ?>" name="img">
+                                    <input type="hidden" value="<?=$sanpham[0]['DonGia']  ?>" name="gia">
+                                    <input type="hidden" id="availableStock" value="<?=$sanpham[0]['SoLuong']?>" name="availableStock">
+>>>>>>> master
                                 </div>                             
                         </div>
                         <div class="social-share mb-4">
@@ -138,6 +193,23 @@
                 </div>
             </div>
         </form>
+<<<<<<< HEAD
+=======
+        <script>
+            document.getElementById('cart-form').addEventListener('submit', function(event) {
+                var quantity = document.getElementById('soluong').value;
+                var availableStock = parseInt(document.getElementById('availableStock').value, 10);
+                if (quantity < 1) {
+                    alert('Số lượng phải lớn hơn hoặc bằng 1');
+                    event.preventDefault();
+                }
+                else if (quantity > availableStock) {
+                    alert('Số lượng nhập vượt quá số lượng sản phẩm hiện có.');
+                    event.preventDefault();
+                }
+            });
+        </script>
+>>>>>>> master
         <div class="row">
             <div class="single-product-thumb swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs">
                 <div class="swiper-wrapper" id="swiper-wrapper-8ad10ade1069f2bc108" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">

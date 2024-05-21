@@ -53,7 +53,12 @@ $tong = 0;
                                             </font>
                                         </span>
                                     </label>
+<<<<<<< HEAD
                                     <input placeholder="" name="hoten" type="text">
+=======
+                                    <input placeholder="" name="hoten" value="<?php echo  $infor[0]['l_name'] ,' ', $infor[0]['f_name'] ?>" type="text" readonly>
+                                    <p class="text-danger"><?php echo $errHT ?></p>
+>>>>>>> master
                                 </div>
                             </div>
 
@@ -68,7 +73,12 @@ $tong = 0;
                                             </font>
                                         </span>
                                     </label>
+<<<<<<< HEAD
                                     <input placeholder="Địa chỉ đường phố" name="diachi" type="text">
+=======
+                                    <input placeholder="Địa chỉ đường phố" name="diachi" type="text" value="<?php echo $infor[0]['diachi'] ?>">
+                                    <p class="text-danger"><?php echo $errDC ?></p>
+>>>>>>> master
                                 </div>
                             </div>
 
@@ -83,7 +93,12 @@ $tong = 0;
                                             </font>
                                         </span>
                                     </label>
+<<<<<<< HEAD
                                     <input placeholder="" name="email" type="email">
+=======
+                                    <input placeholder="" name="email" value="<?php echo $infor[0]['email'] ?>" type="email" readonly>
+                                    <p class="text-danger"><?php echo $errEmail ?></p>
+>>>>>>> master
                                 </div>
                             </div>
                             <div class="col-md-6 col-custom">
@@ -97,6 +112,7 @@ $tong = 0;
                                             </font>
                                         </span>
                                     </label>
+<<<<<<< HEAD
                                     <input type="text" name="sdt">
                                 </div>
                             </div>
@@ -127,6 +143,12 @@ $tong = 0;
                                     <input placeholder="mật khẩu" type="password">
                                 </div>
                             </div>
+=======
+                                    <input type="text" name="sdt" readonly value="<?php echo $infor[0]['sdt'] ?>">
+                                    <p class="text-danger"><?php echo $errSDT ?></p>
+                                </div>
+                            </div>                      
+>>>>>>> master
                         </div>
                         <div class="different-address">
                             <div class="ship-different-title">
@@ -311,13 +333,28 @@ $tong = 0;
                                                     </font><strong class="product-quantity">
                                                         <font style="vertical-align: inherit;">
                                                             <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                                                 × <?php echo $item['3'] ?></font>
+=======
+                                                                × <?php echo $item['3'] ?>
+                                                                
+                                                            </font>
+>>>>>>> master
                                                         </font>
                                                     </strong>
                                                 </td>
                                                 <td class="cart-product-total text-center"><span class="amount">
                                                         <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                                             <font style="vertical-align: inherit;"><?php echo $tt ?></font>
+=======
+                                                            <font style="vertical-align: inherit;">                                           
+                                                            <?php 
+                                                                $formattedValue = number_format($tt, 0, ',', '.') . ' VNĐ';
+                                                                echo $formattedValue;
+                                                            ?>
+                                                        </font>
+>>>>>>> master
                                                         </font>
                                                     </span></td>
                                             </tr>
@@ -333,7 +370,15 @@ $tong = 0;
                                         </th>
                                         <td class="text-center"><strong><span class="amount">
                                                     <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                                         <font style="vertical-align: inherit;"><?php echo $tong ?></font>
+=======
+                                                        <font style="vertical-align: inherit;">
+                                                        <?php 
+                                                            $formattedValue = number_format($tong, 0, ',', '.') . ' VNĐ';
+                                                            echo $formattedValue;
+                                                        ?></font>
+>>>>>>> master
                                                     </font>
                                                 </span></strong></td>
                                     </tr>
@@ -342,7 +387,11 @@ $tong = 0;
                             
                         </div>
                         <div class="payment-method">
+<<<<<<< HEAD
                             <div class="payment-accordion">
+=======
+                            <div class="payment-accordion">                       
+>>>>>>> master
                                 <div id="accordion">
                                     <div class="card">
                                         <div class="card-header" id="#payment-1">
@@ -350,7 +399,11 @@ $tong = 0;
                                                 <a href="#" class="" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                     <font style="vertical-align: inherit;">
                                                         <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                                             Chuyển khoản trực tiếp.
+=======
+                                                            Thanh toán khi nhận hàng
+>>>>>>> master
                                                         </font>
                                                     </font>
                                                 </a>
@@ -372,7 +425,11 @@ $tong = 0;
                                                 <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                     <font style="vertical-align: inherit;">
                                                         <font style="vertical-align: inherit;">
+<<<<<<< HEAD
                                                             Thanh toán séc
+=======
+                                                            Thanh toán trực tuyến
+>>>>>>> master
                                                         </font>
                                                     </font>
                                                 </a>
@@ -387,6 +444,7 @@ $tong = 0;
                                                 </p>
                                             </div>
                                         </div>
+<<<<<<< HEAD
                                     </div>
                                     <div class="card">
                                         <div class="card-header" id="#payment-3">
@@ -419,6 +477,17 @@ $tong = 0;
                                         </font>
                                     </button>
                                     <p class="text-danger "><?php echo $err ?></p>
+=======
+                                    </div>                         
+                                </div>
+                                <div class="order-button-payment">
+                                    <p>Quý khách muốn thay đổi thông tin vui lòng nhấn <a href="index.php?page=taikhoancuatoi" class="text-primary ">vào đây</a></p>
+                                    <button type="submit" name="btndathang" class="btn flosun-button secondary-btn black-color rounded-0 w-100">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">Đặt hàng</font>
+                                        </font>
+                                    </button>                               
+>>>>>>> master
                                 </div>
                             </div>
                         </div>
